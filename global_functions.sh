@@ -1,5 +1,9 @@
 #!/bin/bash
 
+set -e
+
+CloneDir=`dirname $(dirname $(realpath $0))`
+
 pkg_installed()
 {
   local PkgInput = $1
